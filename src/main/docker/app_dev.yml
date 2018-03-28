@@ -1,0 +1,11 @@
+version: '2'
+services:
+    netss-campaign-postgresql:
+        extends:
+            file: postgresql.yml
+            service: netss-campaign-postgresql
+    netss-campaign-rabbit:
+        extends:
+            file: rabbitmq.yml
+            service: rabbit-campaign
+
